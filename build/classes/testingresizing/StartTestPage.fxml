@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="start_test_hpane" alignment="CENTER" spacing="50.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testingresizing.StartTestPageController">
+   <children>
+      <VBox alignment="CENTER" maxWidth="700.0" spacing="40.0" HBox.hgrow="ALWAYS">
+         <children>
+            <TextFlow fx:id="text_flow_start" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </TextFlow>
+            <ProgressBar fx:id="time_progress_bar" prefWidth="500.0" progress="1.0" styleClass="teal-progress-bar" stylesheets="@BasicCSS.css" />
+            <TextField fx:id="text_field_start" onKeyPressed="#startChecking" promptText="Type here..." />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+         <children>
+            <VBox spacing="20.0">
+               <children>
+                  <Label text="WPM" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="wpm_label" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" text="ACCURACY" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="accuracy_label" text="00" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="170.0" text="TIME LEFT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timer_label" text="00:00" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="passage_combo_box" prefWidth="150.0" />
+                  <ChoiceBox fx:id="time_combo_box" prefWidth="150.0" />
+                  <Button fx:id="restart_btn" mnemonicParsing="false" onAction="#restartBtnAction" styleClass="button-login" stylesheets="@BasicCSS.css" text="Restart">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="main_page_btn" cancelButton="true" mnemonicParsing="false" onAction="#gotoMainPage" styleClass="button-login" stylesheets="@BasicCSS.css" text="Return">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</HBox>

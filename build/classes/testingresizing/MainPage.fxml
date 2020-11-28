@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root_pane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" styleClass="borderPane1" stylesheets="@BasicCSS.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testingresizing.MainPageController">
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="1000.0" spacing="50.0">
+               <children>
+                  <Button fx:id="prev_results_btn" contentDisplay="TOP" graphicTextGap="2.0" mnemonicParsing="false" onAction="#gotoPrevResultPage" prefHeight="500.0" prefWidth="1000.0" styleClass="button-mainpage" stylesheets="@BasicCSS.css" text="Previous Results" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/D:/JAVA%20PROGRAMS/testingPageTransition/result.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="learn_btn" contentDisplay="TOP" graphicTextGap="2.0" mnemonicParsing="false" onAction="#gotoLearnPage" prefHeight="500.0" prefWidth="1000.0" styleClass="button-mainpage" stylesheets="@BasicCSS.css" text="Learn" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/D:/JAVA%20PROGRAMS/testingPageTransition/online-learning.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <HBox prefHeight="250.0" prefWidth="1000.0" spacing="50.0">
+                     <children>
+                        <Button fx:id="settings_btn" mnemonicParsing="false" onAction="#gotoSettingsPage" prefHeight="250.0" prefWidth="1000.0" styleClass="button-mainpage" stylesheets="@BasicCSS.css" text="Settings" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/D:/JAVA%20PROGRAMS/testingPageTransition/cogwheel.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="about_btn" mnemonicParsing="false" onAction="#gotoAboutPage" prefHeight="250.0" prefWidth="1000.0" styleClass="button-mainpage" stylesheets="@BasicCSS.css" text="About" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/D:/JAVA%20PROGRAMS/testingPageTransition/about.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="1000.0" spacing="50.0">
+               <children>
+                  <VBox fx:id="leaderboard_pane" alignment="CENTER" onMouseClicked="#click_leaderboard_pane" onMouseEntered="#mouse_enter_leaderboard" onMouseExited="#mouse_exit_leaderboard" prefHeight="1100.0" prefWidth="1000.0" spacing="15.0" styleClass="button-mainpage" stylesheets="@BasicCSS.css">
+                     <children>
+                        <ImageView fitHeight="46.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/D:/JAVA%20PROGRAMS/testingPageTransition/leaderboard.png" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane>
+                           <children>
+                              <Label fx:id="top1_label" graphicTextGap="30.0" text="winner 1" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="file:/D:/JAVA%20PROGRAMS/testingPageTransition/one.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="40.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane>
+                           <children>
+                              <Label fx:id="top2_label" graphicTextGap="30.0" text="winner 2" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="file:/D:/JAVA%20PROGRAMS/testingPageTransition/two.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="40.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane>
+                           <children>
+                              <Label fx:id="top3_label" graphicTextGap="30.0" text="winner 3" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="file:/D:/JAVA%20PROGRAMS/testingPageTransition/three.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="40.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <Button fx:id="start_test_btn" contentDisplay="TOP" graphicTextGap="0.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gotoStartTestPage" prefHeight="1000.0" prefWidth="1000.0" styleClass="button-start" stylesheets="@BasicCSS.css" text="Start Test" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/D:/JAVA%20PROGRAMS/testingPageTransition/typing.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="900.0" spacing="50.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="1000.0" prefWidth="1000.0" spacing="30.0" styleClass="vBox-profile" stylesheets="@BasicCSS.css">
+                     <children>
+                        <ImageView fitHeight="61.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/D:/JAVA%20PROGRAMS/testingPageTransition/picture.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="text_field_username" maxWidth="-Infinity" prefWidth="200.0" promptText="Username" />
+                        <PasswordField fx:id="text_field_password" maxWidth="-Infinity" prefWidth="200.0" promptText="Password" />
+                        <HBox alignment="CENTER" spacing="5.0">
+                           <children>
+                              <Button fx:id="login_btn" mnemonicParsing="false" onAction="#loginBtnClicked" prefHeight="8.0" prefWidth="66.0" styleClass="button-login" stylesheets="@BasicCSS.css" text="Login" textFill="WHITE">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="sign_up_btn1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#launchSignUpStage" prefHeight="8.0" prefWidth="66.0" styleClass="button-sign-up" stylesheets="@BasicCSS.css" text="Sign Up" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <TextField fx:id="text_field_feedback" onAction="#getFeedback" prefHeight="500.0" prefWidth="1000.0" promptText="We Value Your Feedback" styleClass="text-field" stylesheets="@BasicCSS.css" />
+                  <HBox alignment="CENTER" prefHeight="500.0" prefWidth="1000.0" spacing="10.0">
+                     <children>
+                        <Label contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" text="Goal" textAlignment="CENTER" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/D:/JAVA%20PROGRAMS/testingPageTransition/target.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </Label>
+                        <ProgressBar fx:id="progress_bar" prefWidth="150.0" styleClass="red-bar" stylesheets="@BasicCSS.css" BorderPane.alignment="CENTER">
+                           <tooltip>
+                              <Tooltip fx:id="progress_tool_tip" text="Display Progress" />
+                           </tooltip>
+                           <cursor>
+                              <Cursor fx:constant="CROSSHAIR" />
+                           </cursor>
+                        </ProgressBar>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fx:id="circle_transition" layoutX="22.0" layoutY="14.0" opacity="0.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff1100" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill></Circle>
+         </children></Pane>
+   </left>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Pane prefHeight="50.0" prefWidth="200.0" stylesheets="@BasicCSS.css" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label contentDisplay="GRAPHIC_ONLY" text="TIPER" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/D:/JAVA%20PROGRAMS/testingPageTransition/TiperLogo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

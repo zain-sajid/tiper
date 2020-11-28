@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testingresizing.LeaderBoardPageController">
+   <children>
+      <TableView fx:id="leaderboard_table_view" maxWidth="-Infinity" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="rank_column" editable="false" maxWidth="50.0" prefWidth="50.0" resizable="false" sortable="false" text="Rank" />
+          <TableColumn fx:id="name_column" editable="false" prefWidth="250.0" resizable="false" sortable="false" text="Name" />
+            <TableColumn fx:id="wpm_column" editable="false" maxWidth="100.0" prefWidth="100.0" resizable="false" sortable="false" text="WPM" />
+            <TableColumn fx:id="accuracy_column" editable="false" maxWidth="100.0" prefWidth="100.0" resizable="false" sortable="false" text="Accuracy" />
+        </columns>
+      </TableView>
+      <Button fx:id="main_page_btn" cancelButton="true" mnemonicParsing="false" onAction="#gotoMainPage" styleClass="button-login" stylesheets="@BasicCSS.css" text="Return">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</VBox>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testingresizing.PrevResultsPageController">
+   <children>
+      <HBox spacing="60.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="100.0" />
+            <BarChart fx:id="results_bar_chart">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <VBox spacing="20.0">
+               <children>
+                  <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/D:/JAVA%20PROGRAMS/testingPageTransition/TiperRank(2).png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="label_label" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="more_info_label" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="main_page_btn" cancelButton="true" mnemonicParsing="false" onAction="#gotoMainPage" styleClass="button-login" stylesheets="@BasicCSS.css" text="Return">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</VBox>

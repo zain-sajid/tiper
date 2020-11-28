@@ -1,0 +1,378 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26-Jun-2020, 19:14:05
+    Author     : Abdullah
+*/
+.button1
+{
+-fx-background-color : #404040;
+-fx-text-fill: white;
+}
+.button1:hover
+{
+-fx-text-fill: #404040;
+-fx-background-color : white;
+-fx-effect: dropshadow(three-pass-box, #404040, 10, 0, 0, 0);
+}
+.button1:pressed
+{
+-fx-background-color : #2F2B43 ;
+-fx-background-color: #e5e5e5;
+}
+
+.button-learn
+{
+-fx-background-color : black;
+-fx-text-fill: white;
+}
+.button-learn:hover
+{
+-fx-text-fill: black;
+-fx-background-color : white;
+-fx-effect: dropshadow(three-pass-box, #404040, 10, 0, 0, 0);
+}
+.button1-lea:pressed
+{
+-fx-background-color : #2F2B43 ;
+-fx-background-color: #e5e5e5;
+}
+
+/* start button properties */
+.button-start 
+{
+  -fx-background-color: transparent; 
+  -fx-text-fill: white;
+  -fx-border-color: white;
+  -fx-border-width: 3 3 3 3;
+}
+.button-start:hover 
+{
+  -fx-background-color: #0f9d58;
+  -fx-text-fill: black;
+  -fx-border-width: 0 0 0 0;
+  -fx-scale-x: 1.1;
+  -fx-scale-y: 1.1;
+  -fx-scale-z: 1.1;
+  -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10,0,0,1 );
+}
+.button-start:pressed
+{
+-fx-background-color : #0a6d3d ;
+}
+/* leaderboard button/pane properties */
+.leaderboard-pane 
+{
+  -fx-background-color: transparent; 
+  -fx-text-fill: white;
+  -fx-border-color: white;
+  -fx-border-width: 3 3 3 3;
+}
+.leaderboard-pane:hover 
+{
+  -fx-background-color: #0f9d58;
+  -fx-text-fill: black;
+  -fx-border-width: 0 0 0 0;
+  -fx-scale-x: 1.1;
+  -fx-scale-y: 1.1;
+  -fx-scale-z: 1.1;
+  -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10,0,0,1 );
+}
+.leaderboard-pane:pressed
+{
+-fx-background-color : #008CBA ;
+}
+/* rest main page buttons properties */
+.button-mainpage 
+{
+  -fx-background-color: transparent; 
+  -fx-text-fill: white;
+  -fx-border-color: white;
+  -fx-border-width: 3 3 3 3;
+  -fx-cursor: default;
+}
+.button-mainpage:hover 
+{
+  -fx-background-color: #34cdcc;
+  -fx-text-fill: black;
+  -fx-border-width: 0 0 0 0;
+  -fx-scale-x: 1.1;
+  -fx-scale-y: 1.1;
+  -fx-scale-z: 1.1;
+  -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10,0,0,1 );
+  -fx-cursor: hand;
+}
+.button-mainpage:pressed
+{
+-fx-background-color : #248f8e ;
+
+}
+
+.teal-progress-bar    
+{ 
+    -fx-accent: #34cdcc;
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-control-inner-background: white;    
+}
+
+.borderPane1
+{
+    -fx-background-color: linear-gradient(to top left, #333333, #000000);
+}
+
+.circle
+{
+    -fx-fill: radial-gradient(center 50% 50% , radius 10% , #ea7268, #e34234);  
+}
+
+.vBox-profile
+{
+    -fx-border-color: white;
+    -fx-border-width: 3 3 3 3;
+}
+
+.button-sign-up
+{
+    -fx-background-color: transparent;
+}
+.button-sign-up:hover
+{
+    -fx-underline: true;
+}
+
+.button-login
+{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+.button-login:hover
+{
+    -fx-background-color: whitesmoke;
+}
+
+.button-privacy-policy
+{
+    -fx-background-color: transparent;
+    -fx-text-fill: blueviolet;
+}
+.button-privacy-policy:hover
+{
+    -fx-underline: true;
+    -fx-text-fill: blueviolet;
+}
+
+.check-box .mark {
+    -fx-shape:
+"M14.596,2.055L12.455,0C9.687,2.884,6.011,6.714,5.158,7.602L2.055,4.624L0,6.765l5.242,5.037l0.003-0.004
+l0.003,0.004L14.596,2.055z";
+    -fx-scale-x: 1.5;
+    -fx-scale-y: 1.5;
+    -fx-translate-x: 3px;
+    -fx-translate-y: -4px;
+}
+.check-box:selected .mark {
+    -fx-background-color: #0181e2;
+}
+
+.pane{
+    -fx-background-image: url("file:/D:/JAVA%20PROGRAMS/testingPageTransition/cool-background.png");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.text-field 
+{
+    -fx-padding: 5 20 5 20;
+    -fx-background-color: #ffffff ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 40 40 40 40 ;
+}
+.text-field:focused 
+{
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+.text-field-Sign-Up 
+{
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field-Sign-Up:focused 
+{
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+.button2
+{
+-fx-background-color : #393351;
+-fx-background-radius :  20;
+}
+.button2:hover
+{
+-fx-background-color : #524A7B ;
+-fx-background-radius :  20;
+}
+.button2:pressed
+{
+-fx-background-color : #2F2B43 ;
+-fx-background-radius :  20;
+}
+
+.button3
+{
+    -fx-background-color : #141124;
+    -fx-background-radius :  0 0 0 0;
+}
+.button3:hover
+{
+    -fx-background-color : #524A7B ;
+}
+.button3:pressed
+{
+    -fx-background-color : #2F2B43 ;
+}
+
+.button4
+{
+    -fx-background-color :linear-gradient(to top left, #41951C, #D4CEE3);
+    -fx-background-radius :  30 30 30 30;
+}
+.button4:hover
+{
+    -fx-background-color :linear-gradient(to top left, #D4CEE3, #41951C);
+    -fx-background-radius :  30 30 30 30;
+}
+.button4:pressed
+{
+    -fx-background-color :linear-gradient(to top left, #41951C, #D4CEE3);
+    -fx-background-radius :  30 30 30 30;
+}
+
+
+.combo-box
+{
+    -fx-background-color : #141124;
+    -fx-border-color:  #515658;
+    -fx-border-radius: 30;
+}
+.combo-box:hover
+{
+    -fx-background-color : #141124;
+    -fx-border-color:  #FFFF;
+    -fx-border-radius: 30;
+}
+.combo-box:pressed
+{
+    -fx-background-color : #141124;
+    -fx-border-color:  #FFFF;
+    -fx-border-radius: 30;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size : 20;
+    -fx-background-color:   #34cdcc;
+}
+.table-view .column-header .label{
+
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell{
+   -fx-cell-size: 30;
+  -fx-alignment: center-left;
+  -fx-text-fill: #000000;
+}
+
+.table-row-cell:selected {
+    -fx-background-color:  #99e6e5;
+ }
+ .table-row-cell:selected .text {
+        -fx-fill : white ;
+
+ }
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive(  #2D75E8,80%);
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #2D75E8,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}
+
+/* chart properties */
+
+.chart {
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-legend-visible: false;
+}
+.chart-plot-background {
+    -fx-background-color:transparent;
+}
+
+.chart-pie {
+    -fx-border-color: derive(-fx-pie-color, 1%);
+    -fx-border-width: 0px;
+}
+.linear-grad
+{
+    -fx-background-color: linear-gradient(to bottom left, #A868A0, #2D75E8);
+}
+
+/* bar chart properties */
+.chart-bar {
+    -fx-background-color: whitesmoke;
+    -fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+}
+
+.default-color0.chart-bar { -fx-bar-fill: black; }
+
+.axis {   
+    -fx-tick-label-fill: white;
+}
+ 
+.axis-label {
+   -fx-text-fill: white; 
+}
+
+
+.choice-box .context-menu { -fx-background-color: white; }
+
+.choice-box .menu-item:focused { -fx-background-color: #34cdcc; }
+
+.choice-box .menu-item > .label { -fx-text-fill: black; }
+
+.choice-box .menu-item:focused > .label { -fx-text-fill: black; }
+
+.choice-box {
+  -fx-background-color: white;
+  -fx-mark-color: black;
+}
+
+.choice-box > .label { -fx-text-fill: black; }

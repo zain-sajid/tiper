@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="328.0" style="-fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testingresizing.ResultsWindowController">
+   <children>
+      <Label alignment="CENTER" layoutX="3.0" layoutY="14.0" text="Results" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="117.0" layoutY="80.0" text="A little progress each day" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Button fx:id="close_sign_up_btn" cancelButton="true" contentDisplay="GRAPHIC_ONLY" layoutX="288.0" layoutY="5.0" mnemonicParsing="false" onAction="#closeSignUpWindow" prefHeight="13.0" prefWidth="45.0" style="-fx-background-color: transparent;" text="X" AnchorPane.rightAnchor="-40.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/D:/JAVA%20PROGRAMS/testingPageTransition/close.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label alignment="CENTER" layoutX="38.0" layoutY="77.0" prefHeight="17.0" prefWidth="248.0" text="adds up to big results" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="80.0" layoutY="221.0" prefHeight="94.0" prefWidth="248.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="120.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="WPM">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Accuracy" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="wpm_result_label" text="Label" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="accuracy_result_label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+   <padding>
+      <Insets left="40.0" right="40.0" />
+   </padding>
+</AnchorPane>

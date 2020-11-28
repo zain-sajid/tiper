@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testingresizing.AboutPageController">
+   <content>
+      <VBox>
+         <children>
+            <Label text="about us " />
+            <Label layoutX="10.0" layoutY="49.0" text="how is score calculated" />
+            <Label layoutX="10.0" layoutY="76.0" text="team" />
+            <Label layoutX="10.0" layoutY="103.0" text="i dunno" />
+            <Button fx:id="main_page_btn" mnemonicParsing="false" onAction="#gotoMainPage" styleClass="button-login" stylesheets="@BasicCSS.css" text="BACK">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

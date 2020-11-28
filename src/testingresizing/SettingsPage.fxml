@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testingresizing.SettingsPageController">
+   <children>
+      <Label text="set goal for yourself" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <HBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Slider fx:id="goal_slider" max="150.0" maxWidth="-Infinity" min="40.0" prefWidth="200.0" showTickMarks="true" />
+            <Label fx:id="goal_slider_label" text="Goal" textFill="WHITE" />
+         </children>
+      </HBox>
+      <Label text="Choose length of test" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <ComboBox fx:id="time_combo_box" prefWidth="150.0" />
+      <ToggleButton mnemonicParsing="false" text="Sound Effects" />
+      <CheckBox mnemonicParsing="false" text="Remeber me" textFill="WHITE" />
+      <Button mnemonicParsing="false" styleClass="button-login" stylesheets="@BasicCSS.css" text="RESET">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="main_page_btn" mnemonicParsing="false" onAction="#gotoMainPage" styleClass="button-login" stylesheets="@BasicCSS.css" text="BACK">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</VBox>
